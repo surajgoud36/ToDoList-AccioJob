@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+main{
+    padding: 24px 30px;
+}
+main h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.input-container{
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+input,
+select{
+    padding: 4px 6px;
+    border: 1px solid black;
+}
+button{
+    padding: 4px 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+#item-name{
+    flex: 2;
+}
+#item-date,#priority{
+    flex: 1;
+}
+input:focus,select:focus{
+    outline: none;
+    border-color: #007bff;
+}
+
+@media (max-width: 800px){
+    button{
+        font-size: 0.9rem;
+        padding: 4px 12px;
+    }
+}
