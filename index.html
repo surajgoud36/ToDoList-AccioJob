@@ -8,7 +8,7 @@
   </head>
   <body>
     <main>
-      <h1>To-Do List</h1>
+      <h1 class="title">To-Do List</h1>
       <div class="input-container">
         <input type="text" id="item-name" placeholder="Item Name" />
         <input type="date" name="" id="item-date" placeholder="deadline" />
@@ -20,6 +20,28 @@
         </select>
         <button type="button">Add Item</button>
       </div>
+      <div class="task-list">
+        <h1>Today's ToDo List</h1>
+        <div class="card">
+          <div>1</div>
+          <div>Practice getting lean</div>
+          <div>14/09/2026</div>
+          <div>High</div>
+          <div>
+            <button
+              class="complete-btn"
+              type="button"
+              title="mark as completed"
+            >
+              ✓
+            </button>
+          </div>
+          <div>
+            <button class="delete-btn" type="button">🗑️</button>
+          </div>
+        </div>
+      </div>
+      
     </main>
 
     <script src="script.js"></script>

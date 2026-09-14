@@ -11,7 +11,7 @@ body{
 main{
     padding: 24px 30px;
 }
-main h1{
+.title{
     text-align: center;
     font-size: 4rem;
 }
@@ -26,7 +26,7 @@ select{
     padding: 4px 6px;
     border: 1px solid black;
 }
-button{
+.input-container button{
     padding: 4px 24px;
     font-size: 1.1rem;
     cursor: pointer;
@@ -41,7 +41,28 @@ input:focus,select:focus{
     outline: none;
     border-color: #007bff;
 }
-
+.task-list{
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+.card{
+    display: grid;
+    grid-template-columns: 60px 1fr 140px 100px 70px 70px;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.delete-btn,.complete-btn{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+.delete-btn:hover,
+.complete-btn:hover{
+    transform: scale(1.1);
+}
 @media (max-width: 800px){
     button{
         font-size: 0.9rem;
